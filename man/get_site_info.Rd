@@ -15,8 +15,3 @@ Data frame
 \description{
 Biosys site information (such as altitude, slope etc).
 }
-\examples{
-site_info <-
-get_site_info(site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378",
-"http://environment.data.gov.uk/ecology/site/fish/10060"))
-}

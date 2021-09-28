@@ -3,6 +3,7 @@
 export(get_observations)
 export(get_properties)
 export(get_site_info)
+export(get_sites)
 importFrom(dplyr,bind_rows)
 importFrom(httr,GET)
 importFrom(httr,content)
