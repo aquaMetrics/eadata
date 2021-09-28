@@ -30,15 +30,19 @@ devtools::install_github("aquaMetrics/eadata")
 ```
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
+This example shows you how to get freshwater observations using R:
 
 ```{r example}
 library(ead)
 ## basic example to query observations from two sites
-site_id = c("/environment.data.gov.uk/ecology/site/bio/43378",
-      "/environment.data.gov.uk/ecology/site/bio/10254")
+site_id <- c(
+  "/environment.data.gov.uk/ecology/site/bio/43378",
+  "/environment.data.gov.uk/ecology/site/bio/10254"
+)
 obs <- get_observations(site_id,
-                        take = 10,
-                        type_id = "http://environment.data.gov.uk/ecology/def/bio/RiverInvMetricsObservation")
+  take = 10,
+  type_id =
+    "http://environment.data.gov.uk/ecology/def/bio/RiverInvMetricsObservation"
+)
 obs[, c("date", "result.value")]
 ```
