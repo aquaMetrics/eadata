@@ -41,5 +41,5 @@ Query observations end point.
 \examples{
 site_id = c("/environment.data.gov.uk/ecology/site/bio/43378",
      "/environment.data.gov.uk/ecology/site/bio/10254")
-obs <- get_observations(site_id)
+obs <- get_observations(site_id, take = 25)
 }

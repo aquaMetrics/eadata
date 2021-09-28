@@ -11,12 +11,15 @@
 #' @param date_from Date string '2020-11-01'
 #' @param date_to Date string '2021-02-01'
 #'
+#' @importFrom utils URLencode
+#' @importFrom httr GET content
+#' @importFrom jsonlite fromJSON
 #' @return dataframe
 #' @export
 #' @examples
 #' site_id = c("/environment.data.gov.uk/ecology/site/bio/43378",
 #'      "/environment.data.gov.uk/ecology/site/bio/10254")
-#' obs <- get_observations(site_id)
+#' obs <- get_observations(site_id, take = 25)
 get_observations <- function(site_id = NULL,
                              take = 500,
                              skip = 0,
@@ -54,7 +57,7 @@ get_observations <- function(site_id = NULL,
     path <- paste0(path, ultimate_query)
   }
 
-  response <- httr::GET(ead_data, path = path)
-  data <- jsonlite::fromJSON(httr::content(response, "text"), flatten = TRUE)
+  response <- GET(ead::ead_data, path = path)
+  data <- fromJSON(content(response, "text"), flatten = TRUE)
   return(data)
 }

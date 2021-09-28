@@ -10,7 +10,7 @@ get_site_info(site_id = NULL)
 \item{site_id}{Site identifier}
 }
 \value{
-dataframe
+Data frame
 }
 \description{
 Get site info
