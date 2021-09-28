@@ -27,8 +27,8 @@ This example shows you how to get freshwater observations using R:
 library(ead)
 ## basic example to query observations from two sites
 site_id <- c(
-  "/environment.data.gov.uk/ecology/site/bio/43378",
-  "/environment.data.gov.uk/ecology/site/bio/10254"
+  "http://environment.data.gov.uk/ecology/site/bio/43378",
+  "http://environment.data.gov.uk/ecology/site/bio/10254"
 )
 obs <- get_observations(site_id,
   take = 10,
