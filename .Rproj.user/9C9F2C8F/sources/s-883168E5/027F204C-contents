@@ -1,0 +1,17 @@
+Package: ead
+Type: Package
+Title: Environment Agency ecology data
+Version: 0.1.0
+Author: Tim Foster
+Maintainer: Tim Foster <tim.foster@sepa.org.uk>
+Description: Access the Environment Agency Ecology Freshwater data from data.gov.uk
+License: MIT + file LICENSE
+Encoding: UTF-8
+LazyData: true
+Requires:
+ httr,
+ jsonlite,
+ purrr
+Depends: 
+    R (>= 2.10)
+RoxygenNote: 7.1.2
