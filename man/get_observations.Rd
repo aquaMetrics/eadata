@@ -20,13 +20,13 @@ get_observations(
 
 \item{take}{integer max number of returned observations}
 
-\item{skip}{integer number of response to skip}
+\item{skip}{integer number of responses to skip}
 
-\item{type_id}{Type of observation}
+\item{type_id}{Observation type}
 
-\item{property_id}{Property ID}
+\item{property_id}{Property type}
 
-\item{ultimate_foi_id}{Particular feature of interest}
+\item{ultimate_foi_id}{Ultimate feature of interest}
 
 \item{date_from}{Date string '2020-11-01'}
 
@@ -36,10 +36,15 @@ get_observations(
 dataframe
 }
 \description{
-Query observations end point.
+Query observations end point. In the Ecology API, the most central point of
+interest are the Observations. Each observation has a single result for a
+particular Observable Property for a particular Feature of Interest. This API
+accesses hundreds of thousands of surveys and many millions of observations,
+this means this endpoint requires at least one filter of site, observable
+property, observation type or ultimate feature of interest.
 }
 \examples{
-site_id = c("/environment.data.gov.uk/ecology/site/bio/43378",
-     "/environment.data.gov.uk/ecology/site/bio/10254")
+site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378",
+     "http://environment.data.gov.uk/ecology/site/bio/10254")
 obs <- get_observations(site_id, take = 25)
 }

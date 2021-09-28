@@ -7,15 +7,16 @@
 get_site_info(site_id = NULL)
 }
 \arguments{
-\item{site_id}{Site identifier}
+\item{site_id}{List of site identifier}
 }
 \value{
 Data frame
 }
 \description{
-Get site info
+Biosys site information (such as altitude, slope etc).
 }
 \examples{
 site_info <-
-get_site_info(site_id = "/environment.data.gov.uk/ecology/site/bio/43378")
+get_site_info(site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378",
+"http://environment.data.gov.uk/ecology/site/fish/10060"))
 }
