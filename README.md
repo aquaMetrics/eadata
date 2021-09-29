@@ -6,7 +6,7 @@
 <!-- badges: start -->
 <!-- badges: end -->
 
-The goal of ead is to access Environment Agency data from
+The goal of `ead` is to access Environment Agency data from
 environment.data.gov.uk website via an R package
 
 ## Installation
