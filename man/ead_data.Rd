@@ -11,7 +11,7 @@ A vector with 1 value:
 }
 }
 \source{
-\url{http://www.environment.data.gov.uk/}
+\url{https://environment.data.gov.uk}
 }
 \usage{
 ead_data

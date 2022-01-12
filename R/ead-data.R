@@ -6,5 +6,5 @@
 #' \describe{
 #'   \item{1}{url of environment data}
 #' }
-#' @source \url{http://www.environment.data.gov.uk/}
+#' @source \url{https://environment.data.gov.uk}
 "ead_data"
