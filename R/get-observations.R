@@ -22,7 +22,7 @@
 #' @return dataframe
 #' @export
 #' @examples
-#' site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378"),
+#' site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378",
 #'      "http://environment.data.gov.uk/ecology/site/bio/10254")
 #' obs <- get_observations(site_id, take = 25)
 get_observations <- function(site_id = NULL,

@@ -44,7 +44,7 @@ this means this endpoint requires at least one filter of site, observable
 property, observation type or ultimate feature of interest.
 }
 \examples{
-site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378"),
+site_id = c("http://environment.data.gov.uk/ecology/site/bio/43378",
      "http://environment.data.gov.uk/ecology/site/bio/10254")
 obs <- get_observations(site_id, take = 25)
 }
