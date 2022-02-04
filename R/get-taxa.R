@@ -10,7 +10,7 @@
 #' properties <- get_taxa()
 get_taxa <- function() {
   path = paste0("ecology/api/v1/taxa?skip=0&take=18000")
-  response <- GET(ead::ead_data, path = path)
+  response <- GET(eadata::ead_data, path = path)
   data <- fromJSON(content(response, "text"), flatten = TRUE)
   data <- data.frame(data)
 }

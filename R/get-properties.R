@@ -12,7 +12,7 @@
 #' properties <- get_properties()
 get_properties <- function() {
   path = paste0("/ecology/api/v1/properties?skip=0&take=250")
-  response <- GET(ead::ead_data, path = path)
+  response <- GET(eadata::ead_data, path = path)
   data <- fromJSON(content(response, "text"), flatten = TRUE)
   data <- data.frame(data)
 }

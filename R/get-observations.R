@@ -61,7 +61,7 @@ get_observations <- function(site_id = NULL,
     path <- paste0(path, ultimate_query)
   }
 
-  response <- GET(ead::ead_data, path = path)
+  response <- GET(eadata::ead_data, path = path)
   response <- content(response, "text")
   data <- fromJSON(response, flatten = TRUE)
   return(data)

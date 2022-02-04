@@ -45,6 +45,6 @@ get_sites <- function(skip = 0,
     )
   }
 
-  response <- GET(ead::ead_data, path = path)
+  response <- GET(eadata::ead_data, path = path)
   data <- fromJSON(content(response, "text"), flatten = TRUE)
 }

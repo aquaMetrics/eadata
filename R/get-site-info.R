@@ -19,7 +19,7 @@ get_site_info <- function(site_id = NULL) {
   path = paste0("ecology/api/v1/sites/", site)
   response <- purrr::map(path, function(x) {
     Sys.sleep(0.1)
-    response <- GET(ead::ead_data, path = x)
+    response <- GET(eadata::ead_data, path = x)
     data <- fromJSON(content(response, "text"), flatten = TRUE)
     data <- data.frame(data)
     })
