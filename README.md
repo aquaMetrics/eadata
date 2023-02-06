@@ -4,6 +4,8 @@
 # ead
 
 <!-- badges: start -->
+
+[![R-CMD-check](https://github.com/aquaMetrics/eadata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aquaMetrics/eadata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `eadata` is to access Environment Agency data from
@@ -35,16 +37,16 @@ obs <- get_observations(site_id,
   type_id =
     "http://environment.data.gov.uk/ecology/def/bio/RiverInvMetricsObservation"
 )
-obs[, c("date", "result.value")]
-#>          date result.value
-#> 1  2021-11-08         4.79
-#> 2  2021-11-08         5.00
-#> 3  2021-11-08        24.00
-#> 4  2021-11-08       115.00
-#> 5  2021-11-08         8.10
-#> 6  2021-11-08         1.62
-#> 7  2021-11-08         5.00
-#> 8  2021-11-08        34.00
-#> 9  2021-11-08        21.00
-#> 10 2021-11-08         5.00
+obs[, c("date", "result_value")]
+#>          date result_value
+#> 1  2021-09-30         4.79
+#> 2  2021-09-30         5.00
+#> 3  2021-09-30        24.00
+#> 4  2021-09-30       115.00
+#> 5  2021-09-30         8.10
+#> 6  2021-09-30         1.62
+#> 7  2021-09-30         5.00
+#> 8  2021-09-30        34.00
+#> 9  2021-09-30        21.00
+#> 10 2021-09-30         5.00
 ```

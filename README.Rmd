@@ -16,6 +16,7 @@ knitr::opts_chunk$set(
 # ead
 
 <!-- badges: start -->
+[![R-CMD-check](https://github.com/aquaMetrics/eadata/actions/workflows/R-CMD-check.yaml/badge.svg)](https://github.com/aquaMetrics/eadata/actions/workflows/R-CMD-check.yaml)
 <!-- badges: end -->
 
 The goal of `eadata` is to access Environment Agency data from environment.data.gov.uk website via an R package.
@@ -44,5 +45,5 @@ obs <- get_observations(site_id,
   type_id =
     "http://environment.data.gov.uk/ecology/def/bio/RiverInvMetricsObservation"
 )
-obs[, c("date", "result.value")]
+obs[, c("date", "result_value")]
 ```
